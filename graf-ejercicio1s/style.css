@@ -1,0 +1,299 @@
+/* =========================================
+   ESTILOS GENERALES
+========================================= */
+
+body {
+    background-color: #f4f6f8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   TITULO
+========================================= */
+
+h1 {
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   CONTENEDOR DE LA IMAGEN
+========================================= */
+
+#image-container {
+    width: 100%;
+    min-height: 450px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   IMAGEN
+========================================= */
+
+#image {
+    width: 300px;
+    height: auto;
+
+    max-width: 100%;
+
+    object-fit: contain;
+
+    transition: width 0.4s ease, transform 0.3s ease;
+}
+
+
+/* Pequeño efecto al cambiar de tamaño */
+
+#image:hover {
+    transform: scale(1.02);
+}
+
+
+/* =========================================
+   CONTENEDOR DE BOTONES
+========================================= */
+
+.size-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin: 30px 0;
+}
+
+
+/* =========================================
+   ESTILO BASE DE LOS BOTONES
+========================================= */
+
+.size-btn {
+
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 14px 22px;
+
+    min-width: 130px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+
+}
+
+
+/* =========================================
+   BOTÓN X - PEQUEÑO
+   AMARILLO
+========================================= */
+
+.extra-small {
+
+    background-color: #FFD43B;
+
+    color: #222;
+
+}
+
+.extra-small:hover {
+
+    background-color: #F4C400;
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =========================================
+   BOTÓN PEQUEÑO
+   AZUL
+========================================= */
+
+.small {
+
+    background-color: #1976D2;
+
+    color: white;
+
+}
+
+.small:hover {
+
+    background-color: #1259A4;
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =========================================
+   BOTÓN MEDIANO
+   GRIS
+========================================= */
+
+.medium {
+
+    background-color: #6C757D;
+
+    color: white;
+
+}
+
+.medium:hover {
+
+    background-color: #545B62;
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =========================================
+   BOTÓN GRANDE
+   VERDE
+========================================= */
+
+.large {
+
+    background-color: #28A745;
+
+    color: white;
+
+}
+
+.large:hover {
+
+    background-color: #1E7E34;
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =========================================
+   BOTÓN X - GRANDE
+   ROSA
+========================================= */
+
+.extra-large {
+
+    background-color: #F783AC;
+
+    color: white;
+
+}
+
+.extra-large:hover {
+
+    background-color: #E85D91;
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =========================================
+   EFECTO AL PRESIONAR
+========================================= */
+
+.size-btn:active {
+
+    transform: scale(0.95);
+
+}
+
+
+/* =========================================
+   INTEGRANTES
+========================================= */
+
+.team {
+
+    margin-top: 40px;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+}
+
+.team h2 {
+
+    margin-bottom: 20px;
+
+    color: #333;
+
+}
+
+.team h4 {
+
+    font-size: 18px;
+
+    color: #555;
+
+    margin: 8px 0;
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    #image-container {
+
+        min-height: 350px;
+
+    }
+
+    .size-buttons {
+
+        flex-direction: column;
+
+    }
+
+    .size-btn {
+
+        width: 80%;
+
+        max-width: 300px;
+
+    }
+
+}
